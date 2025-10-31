@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Turbo Az</title>
+        <link href="./dist/output.css" rel="stylesheet">
+        <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style/reset.css">
+        <link rel="stylesheet" href="style/font/font.css">
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="flex flex-row items-center my-4 mx-3 justify-between">
+                <button id="openBtn">
+                        <i class="fa-solid fa-bars text-2xl text-[#ca1016]"></i>
+                </button>
+                <div class="flex flex-row items-center gap-4">
+                    <a href="" class="font-bold text-xl text-[#ca1016]">TURBO.AZ</a>
+                    <a href="" class="font-bold text-xl text-[#8d94ad]">BINA.AZ</a>
+                    <a href="" class="font-bold text-xl text-[#8d94ad]">TAP.AZ</a>
+                </div>
+                <div class="flex items-center justify-center w-7 h-7 bg-[#ca1016] rounded-full pb-1">
+                    <button class="text-3xl text-white"> + </button>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="flex flex-col bg-[#f4f4f6] py-4 px-6">
+                <div class="flex flex-row items-center justify-between px-5 py-4 bg-white shadow rounded-t-xl">
+                    <div class="flex flex-row items-center gap-2">
+                        <i class="fa-solid fa-car text-[#ca1016]"></i>
+                        <p class="font-semibold">All brands</p>
+                    </div>
+                    <i class="fa fa-angle-down"></i>
+                </div>
+                <hr>
+                <div class="flex flex-row items-center justify-between px-5 py-4 bg-white shadow rounded-b-xl">
+                    <div class="flex flex-row items-center gap-2">
+                        <i class="fa-solid fa-filter text-[#ca1016]"></i>
+                        <p class="font-semibold">Filters</p>
+                    </div>
+                    <i class="fa fa-angle-down"></i>
+                </div>
+                <div class="flex flex-row items-center justify-between px-5 py-4 my-4 bg-white shadow rounded-xl">
+                    <div class="flex flex-row items-center gap-2">
+                        <i class="fa-solid fa-motorcycle text-[#ca1016]"></i>
+                        <p class="font-semibold">Motorcycle</p>
+                    </div>
+                    <i class="fa fa-angle-down"></i>
+                </div>
+                <div class="flex flex-row items-center justify-between px-5 py-4 mb-4 bg-white shadow rounded-xl">
+                    <div class="flex flex-row items-center gap-2">
+                        <p class="font-semibold">Auto-catalog</p>
+                        <span class="bg-[#4BC236] px-1 rounded-2xl text-white text-sm">NEW</span>
+                    </div>
+                    <i class="fa fa-angle-down"></i>
+                </div>
+                <p class="text-lg font-semibold">Today: <span class="text-[#2b75ed] font-semibold">1413 new posts</span></p>
+                <div class="flex flex-row items-center justify-between px-5 py-4 mt-4 bg-white shadow rounded-xl">
+                    <a class="border-b border-[#555] opacity-100">On credit</a>
+                    <a class="border-b border-[#555] opacity-100">Barter</a>
+                    <a class="border-b border-[#555] opacity-100">Accessories</a>
+                    <a class="border-b border-[#555] opacity-100">Tires</a>
+                    <a class="border-b border-[#555] opacity-100">Rental</a>
+                </div>
+                <!----><div id="carsContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4"></div>
+                <div class="flex flex-col justify-between px-3 py-4 my-4 bg-white shadow rounded-xl">
+                    <img class="rounded-xl mb-4 w-full object-cover object-contain" src="materials/download.png">
+                    <div class="flex flex-col">
+                        <div class="flex flex-row ">
+                            <img class="rounded-xl h-[3em] w-[3em] mr-3" src="materials/logo.png">
+                            <div>
+                                <p class="font-semibold text-xl">Turbo.az</p>
+                                <p>Everything in one app!</p>
+                            </div>
+                        </div>
+                        <ul class="flex flex-row gap-1 mt-4">
+                            <li><i class="fa-solid fa-star text-[#f5c31d]"></i></li>
+                            <li><i class="fa-solid fa-star text-[#f5c31d]"></i></li>
+                            <li><i class="fa-solid fa-star text-[#f5c31d]"></i></li>
+                            <li><i class="fa-solid fa-star text-[#f5c31d]"></i></li>
+                            <li><i class="fa-solid fa-star text-[#f5c31d]"></i></li>
+                        </ul>
+                        <p class="mb-4 text-[#777]">Highest rating in Google Play</p>
+                        <div class="w-full flex justify-center bg-[#212c3a] rounded-md py-2 gap-2">
+                            <img src="materials/googleplay.png" class="h-[1.6em]">
+                            <p class="text-white">Download App</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="flex flex-col bg-[#212c3a] pt-10 pb-5 px-6">
+            <ul class="flex flex-col text-[#dfe4eb] gap-2">
+                <li>Rules</li>
+                <li>User Agreement</li>
+                <li>Place an Advertisement</li>
+                <li>Recommendations for a Car</li>
+            </ul>
+            <hr class="my-5">
+            <p class="text-[#dfe4eb]">Customer Support</p>
+            <p class="text-[#dfe4eb] font-semibold my-1">(012) 526-47-47</p>
+            <p class="text-[#dfe4eb]">Weekdays: 09:00–19:00 | Saturday: 09:00–13:00</p>
+            <ul class="flex flex-row my-4 gap-2">
+                <li><i class="fa-solid fa-envelope text-[#f2f3f5] text-2xl"></i></li>
+                <li><i class="fa-brands fa-facebook text-[#f2f3f5] text-2xl"></i></li>
+                <li><i class="fa-brands fa-instagram text-[#f2f3f5] text-2xl"></i></li>
+            </ul>
+            <hr class="my-5">
+            <div class="flex flex-row gap-10 text-[#dfe4eb] my-5">
+                <a href="">Full Version</a>
+                <a href="">English</a>
+            </div>
+            <p class="text-[#bbc0c7]">The website administration is not responsible for the content of advertising banners and posted announcements.</p>
+            <p class="text-[#bbc0c7] mt-2">© 2006-2025 Digital Classifieds MMC. VÖEN: 1405631661</p>
+        </footer>
+        <script src="logic.js"></script>
+        <script src="data.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js" integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </body>
+</html>

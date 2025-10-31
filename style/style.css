@@ -1,0 +1,6 @@
+/*
+    Source: https://ru.turbo.az/
+    
+    $env:NODE_OPTIONS="--max-old-space-size=4096"
+    npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+*/
