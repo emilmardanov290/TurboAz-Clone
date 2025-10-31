@@ -34,6 +34,6 @@ Support for “Credit”, “Barter”, and other vehicle attributes
 Organized file structure with separate `src`, `dist`, and `materials` folders  
 
 ## Vercel Demo:
-[https://твоя-ссылка.vercel.app](https://твоя-ссылка.vercel.app)
+[https://turbo-az-clone-six.vercel.app/](https://turbo-az-clone-six.vercel.app/)
 
 
